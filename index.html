@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<title>Frontend Mentor | Age calculator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gorditas&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="birth wrapper">
+			<form class="birth__form">
+				<div class="birth__box">
+					<label for="birthDay" class="birth__title">DAY</label>
+					<input
+						type="text"
+						id="birthDay"
+						name="birthDay"
+						placeholder="DD"
+						class="birth__input"
+					/>
+					<p class="text-error">Error</p>
+				</div>
+				
+				<div class="birth__box">
+					<label for="birthMonth" class="birth__title">MONTH</label>
+					<input
+						type="text"
+						id="birthMonth"
+						name="birthMonth"
+						placeholder="MM"
+						class="birth__input"
+					/>
+					<p class="text-error ">Error</p>
+				</div>
+				<div class="birth__box">
+					<label for="birthYear" class="birth__title">YEAR</label>
+					<input
+						type="text"
+						id="birthYear"
+						name="birthYear"
+						placeholder="YYYY"
+						class="birth__input"
+					/>
+					<p class="text-error ">Error</p>
+				</div>
+			</form>
+			<div class="answer">
+				<div class="answer__box">
+					<p class="answer__years">- -</p>
+					<p class="answer__text ">years</p>
+				</div>
+				<div class="answer__box">
+					<p class="answer__months">- -</p>
+					<p class="answer__text">months</p>
+				</div>
+				<div class="answer__box">
+					<p class="answer__days">- -</p>
+					<p class="answer__text">days</p>
+				</div>
+			</div>
+			<div class="submitButton">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="46"
+					height="44"
+					viewBox="0 0 46 44"
+				>
+					<g fill="none" stroke="#FFF" stroke-width="3">
+						<path
+							d="M01 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"
+						/>
+					</g>
+				</svg>
+			</div>
+		</div>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
